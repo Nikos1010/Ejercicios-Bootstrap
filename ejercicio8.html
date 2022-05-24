@@ -6,11 +6,133 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./bootstrap/bootstrap.min.css">
-    <title>Ejemplo de Blockquote en Bootstrap</title>
+    <title>Tablas en Bootstrap</title>
 </head>
 
 <body>
-    
+    <div class="container">
+        <h2>Tabla Básica</h2>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Nombres</th>
+                    <th>Apellidos</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Andrea</td>
+                    <td>González</td>
+                    <td>aygonzalez@example.com</td>
+                </tr>
+                <tr>
+                    <td>Isabella</td>
+                    <td>Montealegre</td>
+                    <td>isam@example.com</td>
+                </tr>
+                <tr>
+                    <td>Nicolas</td>
+                    <td>Barragán</td>
+                    <td>nico@example.com</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="container">
+        <h2>Tabla Bordeada</h2>
+        <p>La clase .table-bordered agrega bordes a una tabla:</p>
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Nombres</th>
+                    <th>Apellidos</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Andrea</td>
+                    <td>González</td>
+                    <td>aygonzalez@example.com</td>
+                </tr>
+                <tr>
+                    <td>Isabella</td>
+                    <td>Montealegre</td>
+                    <td>isam@example.com</td>
+                </tr>
+                <tr>
+                    <td>Nicolas</td>
+                    <td>Barragán</td>
+                    <td>nico@example.com</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="container">
+        <h2>Hover en las filas</h2>
+        <p>La clase .table-hover habilita un estado de desplazamiento en las filas de la tabla:</p>
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th>Nombres</th>
+                    <th>Apellidos</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Andrea</td>
+                    <td>González</td>
+                    <td>aygonzalez@example.com</td>
+                </tr>
+                <tr>
+                    <td>Isabella</td>
+                    <td>Montealegre</td>
+                    <td>isam@example.com</td>
+                </tr>
+                <tr>
+                    <td>Nicolas</td>
+                    <td>Barragán</td>
+                    <td>nico@example.com</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="container">
+        <h2>Tabla</h2>
+        <p>La clase .table-responsive crea una tabla con responsive que se desplazará horizontalmente en dispositivos pequeños (menos de 768px).
+            Cuando se visualiza algo más grande que 768px de ancho, no hay diferencia:
+        </p>
+        <div class="table-responsive">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Nombres</th>
+                        <th>Apellidos</th>
+                        <th>Email</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Andrea</td>
+                        <td>González</td>
+                        <td>aygonzalez@example.com</td>
+                    </tr>
+                    <tr>
+                        <td>Isabella</td>
+                        <td>Montealegre</td>
+                        <td>isam@example.com</td>
+                    </tr>
+                    <tr>
+                        <td>Nicolas</td>
+                        <td>Barragán</td>
+                        <td>nico@example.com</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 </body>
