@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <title>Listas desplegables</title>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Listas desplegables</h2>
+        <p>La clase .dropdown se usa para indicar un menú despegable.</p>
+        <p>Use la clase .dropdown-menu para contruir el menú despegable.</p>
+        <p>Para abrir el menú despegable, use un botón o un enlace con una clase de .dropdown-toggle y data-toggle = "dropdown".</p>
+        <div class="dropdown">
+            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
+                Ejemplo de lista despegable
+            </button>
+            <ul class="dropdown-menu">
+                <li><a href="#">HTML</a></li>
+                <li><a href="#">CSS</a></li>
+                <li><a href="#">JavaScript</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="container">
+        <h2>Plegable</h2>
+        <p>Haga clic en el botón para alternar entre mostrar y ocultar contenido.</p>
+        <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo">Plegable</button>
+        <div class="collapse" id="demo">
+            Un analista de sistemas es responsable del estudio de los problemas y las necesidades presentes en la organización para determinar en qué medida puede el hardware, las aplicaciones, software, los archivos y bases de datos, las redes, las personas y los procedimientos actuar conjuntamente para resolver los problemas del modo más adecuado y mejorar los sistemas de la empresa y de información.
+        </div>
+    </div>
+    <div class="container">
+        <h2>Plegable</h2>
+        <a href="#demo1" class="btn btn-info" data-toggle="collapse">Mostrar u Ocultar Plegable</a>
+        <div id="demo1" class="collapse">
+            Un analista de sistemas es responsable del estudio de los problemas y las necesidades presentes en la organización para determinar en qué medida puede el hardware, las aplicaciones, software, los archivos y bases de datos, las redes, las personas y los procedimientos actuar conjuntamente para resolver los problemas del modo más adecuado y mejorar los sistemas de la empresa y de información.
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>
