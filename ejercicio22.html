@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <title>Ejemplo Scrollspy</title>
+    <style>
+        body {
+            position: relative;
+        }
+        @media (min-width:768px) {
+            #section1 {
+            margin-top: 150px;
+        }
+        }
+        #section1 {
+            padding-top: 50px;
+            height: 500px;
+            color: #fff;
+            background-color: #0f51ba;
+        }
+        #section2 {
+            padding-top: 50px;
+            height: 500px;
+            color: #fff;
+            background-color: #4712a1;
+        }
+        #section3 {
+            padding-top: 50px;
+            height: 500px;
+            color: #fff;
+            background-color: #ffbb00;
+        }
+        #section41 {
+            padding-top: 50px;
+            height: 500px;
+            color: #fff;
+            background-color: #07d4a0;
+        }
+        #section42 {
+            padding-top: 50px;
+            height: 500px;
+            color: #fff;
+            background-color: #03c0d5;
+        }
+    </style>
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="#" class="navbar-brand">Noith</a>
+            </div>
+            <div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#section1">Sección 1</a></li>
+                        <li><a href="#section2">Sección 2</a></li>
+                        <li><a href="#section3">Sección 3</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Sección 4</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#section41">Sección 4-1</a></li>
+                                <li><a href="#section42">Sección 4-2</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div id="section1" class="container-fluid">
+        <h1>Sección 1</h1>
+        <p>Programa ADSI</p>
+        <p>Tecnólogo en Análisis y Desarrollo de Sistemas de Información</p>
+    </div>
+    <div id="section2" class="container-fluid">
+        <h1>Sección 2</h1>
+        <p>Programa MECDICE</p>
+        <p>Tecnólogo en Mantenimiento de Equipo de Cómputo y Cableado Estructurado.</p>
+    </div>
+    <div id="section3" class="container-fluid">
+        <h1>Sección 3</h1>
+        <p>Programa ADSI</p>
+        <p>Tecnólogo en Análisis y Desarrollo de Sistemas de Información</p>
+    </div>
+    <div id="section41" class="container-fluid">
+        <h1>Sección 4 Submenu 1</h1>
+        <p>Programa MECDICE</p>
+        <p>Tecnólogo en Mantenimiento de Equipo de Cómputo y Cableado Estructurado.</p>
+    </div>
+    <div id="section42" class="container-fluid">
+        <h1>Sección 4 Submenu 2</h1>
+        <p>Programa REDES</p>
+        <p>Tecnólogo en redes de Datos.</p>
+    </div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>
