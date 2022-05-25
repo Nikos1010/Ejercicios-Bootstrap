@@ -44,6 +44,66 @@
             <strong>Nota:</strong> Este ejemplo muestra cómo crear una pestaña de navegación básica. Todavía no se puede alterar / dinámico (no puede hacer clic en los enlaces para mostrar contenido diferente).
         </p>
     </div>
+    <div class="container">
+        <h3>Pastillas</h3>
+        <ul class="nav nav-pills">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">Menu 1</a></li>
+            <li><a href="#">Menu 2</a></li>
+            <li><a href="#">Menu 3</a></li>
+        </ul>
+    </div>
+    <div class="container">
+        <h3>Menú vertical</h3>
+        <div class="row">
+            <div class="cold-md-3">
+                <p>Un sistema de informacion es un conjunto de elementos que interactuan entre si, y obtienen, procesan y dan información a una empresa acerca de las actividades que desea realizar.</p>
+            </div>
+            <div class="cold-md-3">
+                <p>En la actualidad, los sitemas de información son el motor de las actividades y lo principal para la toma de desiciones en las empresas.</p>
+            </div>
+            <div class="cold-md-3">
+                <p>Ellos nos facilitan la vida... Sigue adelante con tu formación.. es la oportunidad de cumplir sus metas!!</p>
+            </div>
+            <div class="cold-md-3">
+                <ul class="nav nav-pills nav-stacked">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="#">Menu 1</a></li>
+                    <li><a href="#">Menu 2</a></li>
+                    <li><a href="#">Menu 3</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="clearfix visible-lg"></div>
+    </div>
+    <div class="container">
+        <h2>Pestañas dinamicas</h2>
+        <p>Para hacer que las pestañas sean conmutables, agregue el atributo data-toggle = "tab" a cada enlace. Luego agregue una case .tab-pane con un ID único para cada pestaña y envuélvalas dentro de un elemento div con la clase .tab-content.</p>
+        <ul class="nav nav-tabs">
+            <li class="active"><a href="#home" data-toggle="tab">Home</a></li>
+            <li><a href="#menu1" data-toggle="tab">Menu 1</a></li>
+            <li><a href="#menu2" data-toggle="tab">Menu 2</a></li>
+            <li><a href="#menu3" data-toggle="tab">Menu 3</a></li>
+        </ul>
+        <div class="tab-content">
+            <div id="home" class="tabe-pane fade in active">
+                <h3>HOME</h3>
+                <p>Mira como se ve el Home.</p>
+            </div>
+            <div id="menu1" class="tabe-pane fade">
+                <h3>Menu 1</h3>
+                <p>Ahora mira el Menú 1.</p>
+            </div>
+            <div id="menu2" class="tabe-pane fade">
+                <h3>Menu 2</h3>
+                <p>Continuamos con el Menú 2.</p>
+            </div>
+            <div id="menu3" class="tabe-pane fade">
+                <h3>Menú 3</h3>
+                <p>Por último mira el Menú 3.</p>
+            </div>
+        </div>
+    </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 </body>
